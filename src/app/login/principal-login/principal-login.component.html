@@ -1,0 +1,83 @@
+
+
+<div>
+
+
+    <header class="header">
+        <img class="header__imagen" src=".\assets/cabezote.png.png" alt="">
+    </header>
+
+    <main class="main">
+
+        <div class="main__bienvenida">
+            <h2>
+                Welcome back
+            </h2>
+            <div class="linea">
+
+            </div>
+        </div>
+
+        <h1>
+            Login
+        </h1>
+
+        <div class="main__parrafo">
+            <p>
+                For your money safety, please delete all extensions
+                for the browser you use to log in to your wallet
+            </p>
+        </div>
+
+
+
+        <form (ngSubmit)="consulta()" class="formLogin" action="">
+
+            <div class="formLogin__conetedor">
+
+                <div class="formLogin__texto">
+                    <span class="formLogin__span">login</span>
+                    <span class="formLogin__span">Pasword</span>
+                </div>
+
+                <div class="formLogin__input">
+                    <input type="text"
+                           class="formLogin__input_password" 
+                           id="formLogin__input_password"
+                           name="login"
+                           [(ngModel)]="usuario.correo">
+                    <input type="text"
+                           class="formLogin__input_password"
+                           id="formLogin__input_password"
+                           name="password"
+                           [(ngModel)]="usuario.contrasena">
+                </div>
+
+            </div>
+
+           <!--  <button class="formLogin__submit" type="submit">login</button> -->
+
+
+           <input class="formLogin__submit" type="submit" value="Login" />
+
+        </form>
+
+        <div>
+            <div class="main__contenedor_register">
+
+                <div class="main__contenedor_registerTexto">
+                    <span class="main__contenedor_registerTexto_span1">Don’t have and account?</span>
+                    <span class="main__contenedor_registerTexto_span2">Register here </span>
+                </div>
+                <button class="main__contenedor_createAccount">Create account</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</div>
+
+

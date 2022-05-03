@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  h1 {
+    font-size: 64px;
+    color: #0046ca;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #0046ca;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .header__imagen {
+    margin: auto;
+    display: block;
+  }
+  
+  .linea {
+    height: 3px;
+    background-color: #00f1e5;
+    width: 90px;
+    margin: auto;
+    display: block;
+  }
+  
+  .main__parrafo {
+    padding: 10px;
+    height: 100px;
+    width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #0046ca;
+    font-size: 30px;
+  }
+  
+  .formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    gap: 20px 25px;
+  }
+  
+  .formLogin__texto {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    color: #0046ca;
+    font-size: 30px;
+    padding: 0px;
+    gap: 40px 55%;
+  }
+  
+  .formLogin__input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 25%;
+  }
+  
+  .formLogin__conetedor {
+    display: flex;
+  }
+  
+  input {
+    width: 449px;
+    height: 70px;
+  }
+  
+  .formLogin__submit {
+    border-radius: 20px;
+    background-color: #0046ca;
+    font-size: 30px;
+    color: #a5bdec;
+    border: none;
+    position: relative;
+    left: 90px;
+  }
+  
+  .formLogin__span {
+    margin-top: 15px;
+  }
+  
+  .formLogin__input_password {
+    border-radius: 10px;
+    outline: none;
+    font-size: 30px;
+    border: 4px solid #0046ca;
+  }
+  
+  .main__contenedor_registerTexto {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main__contenedor_register {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main__contenedor_createAccount {
+    border-radius: 20px;
+    padding: 15px 30px 15px;
+    background-color: white;
+    font-size: 30px;
+    color: #a5bdec;
+    border: 4px solid #00f1e5;
+    position: relative;
+    left: 30px;
+  }
+  
+  .main__contenedor_registerTexto_span1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #0046ca;
+  }
+  
+  .main__contenedor_registerTexto_span2 {
+    font-size: 20px;
+    color: #a5bdec;
+  }
+  
