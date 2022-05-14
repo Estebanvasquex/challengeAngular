@@ -22,15 +22,15 @@ export class PrincipalLoginComponent  {
 
 
   consulta(){
-    let datoCorreo = this.usuario.correo;
-    let datoContrasena = this.usuario.contrasena;
+  /*   let datoCorreo = this.usuario.correo;
+    let datoContrasena = this.usuario.contrasena; */
 
-    if(datoCorreo == this.datosLogin.correo && datoContrasena == this.datosLogin.contrasena ){
+    if(this.usuario.correo == this.datosLogin.correo && this.usuario.contrasena == this.datosLogin.contrasena ){
       console.log('EL USURIO PUEDE INICIAR EN DASBOARD')
     }
-    else{
+  /*   else{
       console.log('ERROR DE USUARIO O CONTRASEÑA')
-    }
+    } */
 
     this.usuario.correo = '';
     this.usuario.contrasena = '';

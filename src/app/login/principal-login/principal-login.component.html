@@ -1,6 +1,6 @@
 
 
-<div>
+<div *ngIf="this.usuario.correo != this.datosLogin.correo && this.usuario.contrasena != this.datosLogin.contrasena; else dasboard">
 
 
     <header class="header">
@@ -80,4 +80,11 @@
 
 </div>
 
+
+<ng-template #dasboard>
+    <h1>
+        ESTAS DENTRO DEL DASBOARD
+    </h1>
+
+</ng-template>
 
