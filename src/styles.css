@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-/* Googlefont Poppins CDN Link */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -17,6 +16,11 @@
 .sidebar.active{
   width: 60px;
 }
+.active-link{
+  background-color: #081D45;
+}
+
+
 .sidebar .logo-details{
   height: 80px;
   display: flex;
@@ -79,7 +83,7 @@
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; 
 }
 .sidebar.active ~ .home-section{
   width: calc(100% - 60px);
@@ -156,19 +160,8 @@ nav .search-box .bx-search{
   min-width: 190px;
   padding: 0 15px 0 2px;
 }
-nav .profile-details img{
-  height: 40px;
-  width: 40px;
-  border-radius: 6px;
-  object-fit: cover;
-}
-nav .profile-details .admin_name{
-  font-size: 15px;
-  font-weight: 500;
-  color: #333;
-  margin: 0 10px;
-  white-space: nowrap;
-}
+
+
 nav .profile-details i{
   font-size: 25px;
   color: #333;
