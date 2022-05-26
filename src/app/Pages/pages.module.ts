@@ -4,6 +4,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { AuthComponent } from './auth/auth.component';
 import { TransactionsComponent } from './transactions/transactions.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,8 @@ import { TransactionsComponent } from './transactions/transactions.component';
     TransactionsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     ResumeComponent,

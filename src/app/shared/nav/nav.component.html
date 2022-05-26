@@ -2,10 +2,17 @@
     <div class="sidebar-button">
       <i class='bx bx-menu sidebarBtn'></i>
       <span class="dashboard">Dashboard</span>
+      <form   class="search-box"
+              (ngSubmit)="buscar()"
+              action="" >
+        <input  
+                [(ngModel)] = "termino" 
+                type="text"
+                name="termino1"
+                placeholder="VER EN CONSOLA"
+                ><i class='bx bx-search' ></i>
+      </form>
     </div>
-    <div class="search-box">
-      <input type="text" placeholder="Search...">
-      <i class='bx bx-search' ></i>
-    </div>
+    
 
   </nav>

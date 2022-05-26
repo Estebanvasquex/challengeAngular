@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DatosService } from 'src/app/Pages/services/datos.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,11 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NavComponent implements OnInit {
+export class NavComponent  {
 
-  constructor() { }
+  termino:string =""
 
-  ngOnInit(): void {
+  constructor(private buscarUsuarios: DatosService) { }
+
+  buscar(){
+    this.buscarUsuarios.buscarUsuarios().subscribe(resp => {
+      console.log(resp)
+    })
+    console.log(this.termino)
   }
+
 
 }
